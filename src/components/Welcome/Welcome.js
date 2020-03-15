@@ -6,7 +6,7 @@ class Welcome extends Component{
         return(
             <div className="row" id="Body">
                 <div className="medium-12 columns">
-                    <h2 id="welcomeText">PHP, MYSQLand ReactJS App</h2>
+                    <h2 id="welcomeText">PHP, MYSQL and ReactJS App</h2>
                     <a href="/login" className="button">Login</a>
                     <a href="/singup" className="button success">Singup</a>
                 </div>
