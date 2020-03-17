@@ -44,10 +44,10 @@ class Singup extends Component{
             <div className="row" id="sBody">
                 <div className="medium-5 columns left">
                     <h4>Singup</h4>
-                    <input type="text" name="email" placeholder="Email" onChange={this.onChange} />
-                    <input type="text" name="name" placeholder="Name" onChange={this.onChange} />
-                    <input type="text" name="username" placeholder="Username" onChange={this.onChange} />
-                    <input type="password" name="password" placeholder="Password" onChange={this.onChange} />
+                    <input type="text" name="email" placeholder="Email" onChange={this.onChange} value={this.state.email} />
+                    <input type="text" name="name" placeholder="Name" onChange={this.onChange} value={this.state.name}/>
+                    <input type="text" name="username" placeholder="Username" onChange={this.onChange} value={this.state.username}/>
+                    <input type="password" name="password" placeholder="Password" onChange={this.onChange} value={this.state.password}/>
                     <input type="submit" className="button" value="Sing UP" onClick={this.singup} />
                     <a href="/login">Login</a>
                 </div>
