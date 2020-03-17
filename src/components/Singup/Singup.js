@@ -21,7 +21,7 @@ class Singup extends Component{
             PostData('singup', this.state).then((result)=>{
                 let responseJson = result;
                 if(responseJson.userData){
-                    sessionStorage.setItem('userData'.JSON.stringify(responseJson));
+                    sessionStorage.setItem('userData', JSON.stringify(responseJson));
                     this.setState({redirectToReferrer: true});
                 }else{
                     alert(result.error);
